@@ -2,17 +2,18 @@ import React from "react";
 import StudentCard from "./StudentCard";
 
 const student = {
-    name: 'Khali Gopaul',
+    name: 'Kali',
     age: 37,
     id: 'rd568df',
     term: 'Su22'
 }
- function Main(props) {
+ function Main({name}) {
     
-    return (<main>
-        <h1>Hello {props.name}</h1>
-        <StudentCard student={student} />
-    </main>)
+    return (<>
+    <main>
+        <h1>Hello {name || 'Guest'}</h1>
+        {name && <StudentCard student={student} />}
+    </main></>)
 
 }
 

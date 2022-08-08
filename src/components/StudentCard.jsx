@@ -7,14 +7,8 @@ function StudentCard({ student }) {
             <p>Age: {student.age}</p>
             <p>Id: {student.id}</p>
             <p>Term: {student.term}</p>
-
-
         </section>
     )
-
-
-
 }
-
 
 export default StudentCard
